@@ -1,0 +1,44 @@
+body{
+	height: 10vh;
+	background: #ffefdb;
+	color: #352a22;
+	font-family: sams-serif;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 75px;
+}
+
+.mainBox{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	border: #352a22 4px solid;
+	border-radius: 8px;
+	background-color: burlywood;
+	overflow: hidden;
+	display: flex;
+	align-items:center ;
+	justify-content: center;
+	flex-direction:column ;
+}
+
+.fluidBox{
+	min-width: 300%;
+	min-height: 300%;
+	border-radius: 35%;
+	position: absolute;
+	background-color: #ffefdb;
+	animation: spin 5s linear infinite;
+
+	z-index: 1;
+}
+
+@keyframes spin{
+	0%{
+		transform: translateY( 0px);
+	}
+	100%{
+		transform: translateY(-850px) rotate(360deg);
+	}
+}
